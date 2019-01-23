@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-debian:stretch-build
+FROM balenalib/raspberrypi3-debian:stretch-run
 
 RUN apt-get update && apt-get install -yq \
     x11vnc x11-utils xvfb wmctrl \
