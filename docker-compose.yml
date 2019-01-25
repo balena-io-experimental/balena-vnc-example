@@ -1,7 +1,7 @@
 version: '2'
 services:
-  app:
+  vnc-app:
     restart: always
-    build: ./app
+    build: ./vnc-app
     ports:
       - "8080:5900"
