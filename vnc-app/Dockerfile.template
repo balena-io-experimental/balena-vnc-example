@@ -5,7 +5,7 @@ RUN install_packages x11vnc \
     xvfb \
     wmctrl \
     supervisor \
-    x11-apps
+    gnome-calculator
 
 WORKDIR /usr/src/app
 
