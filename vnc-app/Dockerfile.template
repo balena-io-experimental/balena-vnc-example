@@ -1,14 +1,16 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch-run
 
-RUN apt-get update && apt-get install -yq \
-    x11vnc x11-utils xvfb wmctrl \
+RUN install_packages x11vnc \
+    x11-utils \
+    xvfb \
+    wmctrl \
     supervisor \
-    gnome-calculator && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    x11-apps
 
 WORKDIR /usr/src/app
 
 COPY . .
+
 ADD supervisor /etc/supervisor
 
 CMD ["bash", "start.sh"]
