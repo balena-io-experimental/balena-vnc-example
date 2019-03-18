@@ -1,4 +1,4 @@
-# X11 Example
+# Balena VNC Example
 
 ![](https://raw.githubusercontent.com/balena-io-playground/balena-x11-example/master/img/header.png)
 
@@ -9,6 +9,6 @@ To change the desired application, make sure you install in you the [Dockerfile.
 To run the VNC Server with password, add the environment variable `VNC_PASS` on the balenaCloud dashboard.
 
 ### Connecting to VNC
-* If you are in the same network as the device, connect to the `device_ip:8080`.
+* If you are in the same network as the device, connect to the `device_ip::8080`.
 
 * If you are not in the same network, you will need to tunnel the connecting. More info on this coming soon...
